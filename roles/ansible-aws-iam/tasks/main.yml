@@ -1,0 +1,4 @@
+---
+# tasks file for pb-ansible-aws-iam
+- include: create-iam-user.yml
+- include: create-iam-policy.yml

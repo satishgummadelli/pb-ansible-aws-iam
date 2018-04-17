@@ -1,0 +1,9 @@
+- name: Assign a policy to the user
+  iam_policy:
+    iam_type: user
+    iam_name: "{{iam_user_name}}"
+    policy_name: "{{iam_policy}}"
+    state: present
+    aws_access_key: "{{aws_access_key}}"
+    aws_secret_key: "{{aws_secret_key}}"
+    policy_json: "{{ lookup('file','pb-policy.json') }}"

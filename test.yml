@@ -1,0 +1,9 @@
+- hosts: localhost
+  connection: local
+  gather_facts: True
+  vars:
+    iam_policy: test-policy
+    iam_user_name: test-user
+    iam_group: test-group
+  roles:
+    - ansible-aws-iam
