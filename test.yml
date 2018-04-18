@@ -2,6 +2,8 @@
   connection: local
   gather_facts: True
   vars:
+    aws_access_key: a
+    aws_secret_key: 
     iam_policy: test-policy
     iam_user_name: test-user
     iam_group: test-group
